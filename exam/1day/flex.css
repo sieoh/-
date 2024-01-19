@@ -1,0 +1,29 @@
+.container {
+  background-color: royalblue;
+  display: flex;
+  /* flex: 1차원 정렬(x축이 될 수도 있고, y축이 될 수도 있음) 
+  grid: 2차원 정렬
+  inline-flex: 줄바꿈이 없는 정렬*/
+  flex-direction: column;
+  /* flex-direction 
+  row: 행 정렬
+  row-reverse: 반대로 행 정렬
+  column: 열 정렬
+  column-reverse: 반대로 열 정렬 */
+  margin-bottom: 10px;
+}
+.container .item:nth-child(1) {
+  width: 100px;
+  height: 80px;
+  background-color: yellow;
+}
+.container .item:nth-child(2) {
+  width: 120px;
+  height: 50px;
+  background-color: orange;
+}
+.container .item:nth-child(3) {
+  width: 80px;
+  height: 130px;
+  background-color: brown;
+}

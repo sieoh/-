@@ -1,0 +1,58 @@
+.container {
+  background-color: royalblue;
+  display: flex;
+  margin-bottom: 10px;
+  height: 350px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-wrap 
+  wrap: 자동 줄바꿈 */
+  /* ========================================== */
+  /* justify-content: center; */
+  /* justify-content: 주축 정렬 방법 */
+  /*center: 중앙으로 정렬
+  flex-end: 끝점으로 정렬
+  space-around: 아이템 사이에 여백 부여*/
+  /* ========================================== */
+  /* align-content: center; */
+  /* align-content: 교차 축의 여러 줄 정렬 방법 */
+  /* flex-start: 시작점으로 정렬
+  center: 가운데 정렬
+  flex-end: 끝점으로 정렬
+  space-around: 
+  space-between: 아이템 사이를 균등하게 정렬 */
+  /* ========================================== */
+  /* align-items: baseline; */
+  /* align-items: 교차 축의 한 줄 정렬 방법 */
+  /* flex- start: 각 줄의 시작점으로 정렬
+  center: 각 줄의 가운데로 정렬
+  flex-end: 각 줄의 끝점으로 정렬
+  baseline: 각 줄의 문자 기준선에 정렬 */
+}
+.container .item {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: 4px dotted red;
+  background-color: orange;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 0;
+}
+.container .item:nth-child(1) {
+  order: 1;
+  flex-grow: 1;
+  /* order: 순서 */
+  /* flex-grow: 증가 비율 */
+  /* flex-shrink: 감소 비율 */
+  /* flex-basis:  */
+}
+.container .item:nth-child(2) {
+  order: 2;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.container .item:nth-child(3) {
+  order: 3;
+  flex-grow: 2;
+}

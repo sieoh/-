@@ -1,0 +1,45 @@
+.container1 {
+  width: 300px;
+  background-color: royalblue;
+}
+.item1 {
+  width: 300px;
+  background-color: royalblue;
+}
+.item2 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.item3 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border: 4px solid red;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.parent {
+  width: 200px;
+  height: 150px;
+  background-color: royalblue;
+  overflow: hidden;
+}
+.child {
+  width: 300px;
+  height: 100px;
+  background-color: orange;
+}
+.shape1 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  /* border-top: 100px solid transparent;
+  border-left: 100px solid blue;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid blue; */
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
