@@ -1,0 +1,194 @@
+body {
+    font-family: "Nanum Gothic", sans-serif;
+    /* height: 3000px; */
+}
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  font-size: 24px;
+}
+/* 이미지는 block 처리를 해놓는게 좋다 */
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-color: rgb(246,245,240);
+  border-bottom: 1px solid #c8c8c8;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+header > .inner {
+  width: 1100px;
+  height: 120px;
+  background-color: rgb(246,245,240);
+  margin: 0 auto;
+  position: relative;
+}
+header .inner .logo {
+  position: absolute;
+  height: 75px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto 0;
+}
+.sub-menu {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+.sub-menu ul.menu{
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+.sub-menu ul.menu li {
+  position: relative;
+}
+.sub-menu ul.menu li::before{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto 0;
+}
+.sub-menu ul.menu li:first-child::before{
+  display: none;
+}
+.sub-menu ul.menu li a {
+  font-size: 12px;
+  display: block;
+  padding: 10px;
+  color: rgb(120,119,118);
+  padding: 11px 16px;
+}
+.sub-menu ul.menu li a:hover{
+  text-decoration: underline;
+  color: #000;
+}
+.sub-menu .search{
+  height: 34px;
+  position: relative;
+}
+.sub-menu .search input {
+  height: 34px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+  color: #777;
+  width: 36px;
+  transition: width .4s;
+}
+.sub-menu .search input:focus{
+  border-color: #669900;
+  width: 190px;
+  
+}
+.sub-menu .search .material-symbols-outlined{
+  position: absolute;
+  height: 24px;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+}
+
+header .main-menu{
+  display: flex;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+header .main-menu .item {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+header .main-menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+
+}
+header .main-menu .item:hover .item__name{
+  background-color: #2c2a29;
+  color: #669900;
+  border-radius: 6px 6px 0px 0px;
+}
+header .main-menu .item .item__contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+header .main-menu .item:hover .item__contents{
+  display: block;
+}
+header .main-menu .item .item__contents .contents__menu{
+  color: #fff;
+  background-color: #2c2a29;
+}
+header .main-menu .item .item__contents .contents__menu > ul {
+  padding: 20px 0;
+  display: flex;
+}
+header .main-menu .item .item__contents .contents__menu > ul >li {
+  width: 220px;
+}
+header .main-menu .item .item__contents .contents__menu > ul >li h4 {
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #fff;
+}
+header .main-menu .item .item__contents .contents__menu > ul >li ul > li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+header .main-menu .item .item__contents .contents__menu > ul >li ul > li:hover {
+  color: rgb(100,167,11);
+}
+header .main-menu .item .item__contents .contents__texture{
+  background-image: url('../img/main_menu_pattern.jpg');
+  height: 100px;
+  padding: 26px 0;
+  font-size: 12px;
+}
+header .main-menu .item .item__contents .contents__texture .inner h4 {
+  color: #999;
+  font-weight: 000;
+  margin-bottom: 7px ;
+}
+header .main-menu .item .item__contents .contents__texture .inner p {
+  color: rgb(100,167,11);
+  margin: 4px 0 18px;
+}
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+  z-index: -1;
+}
+header .badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 12px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 15);
+}
